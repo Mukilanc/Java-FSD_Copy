@@ -35,7 +35,6 @@ public class FileOperations {
 
         System.out.println(content);
 
-        // Delete the file
         file.delete();
     }
 }
