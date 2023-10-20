@@ -39,7 +39,7 @@
 		sess = request.getSession();
 		username = (String) sess.getAttribute("username");
 
-		Class.forName("com.mysql.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver");
 		// con = DriverManager.getConnection("jdbc:mysql://bxdckaiotjos6uxqsxij-mysql.services.clever-cloud.com:3306/bxdckaiotjos6uxqsxij", "u1bl3chv4wysc2pd", "fFWLbfvEvE8CYje7Cv3o");
 		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/quiz?useSSL=false", "root", "Nirmala@1973");
 		stmt = con.createStatement();
